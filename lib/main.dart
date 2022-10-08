@@ -55,6 +55,9 @@ class _ContactsListState extends State<ContactsList> {
         child: SizedBox.expand(
           child: Container(
             color: Colors.white,
+
+            ///this is optional we can either use this widget
+            ///or we can use ApiProvider.of(context).api.dateAndTime??""
             child: DateTimeWidget(key: _textKey),
           ),
         ),
