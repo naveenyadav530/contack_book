@@ -1,9 +1,4 @@
-import 'package:contack_book/api.dart';
-import 'package:contack_book/api_provider.dart';
-import 'package:contack_book/date_time_widget.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:uuid/uuid.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,13 +28,11 @@ class ContactsList extends StatefulWidget {
 }
 
 class _ContactsListState extends State<ContactsList> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title:
-            Text("Inherited Model"),
+        title: const Text("Inherited Model"),
       ),
       body: Container(),
     );
